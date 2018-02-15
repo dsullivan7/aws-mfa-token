@@ -1,0 +1,37 @@
+{
+  "name": "aws-mfa-token",
+  "version": "1.0.0",
+  "description": "Configures an mfa token and adds it to the aws config",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "test": "echo \"No tests to run\" && exit 0"
+  },
+  "bin": {
+    "aws-mfa-token": "./dist/bin/aws-mfa-token.js"
+  },
+  "keywords": [
+    "aws",
+    "mfa"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dsullivan7/aws-mfa-token.git"
+  },
+  "preferGlobal": "true",
+  "author": "Danny Sullivan",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "yargs": "^11.0.0"
+  }
+}
